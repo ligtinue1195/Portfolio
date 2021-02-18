@@ -170,6 +170,10 @@
 ```
  for_su <- nrow(test.data)
  dia.pre <- model.test(for_su, model.pre1)
+ 
+ dia.res <- model.res(dia.pre, for_su)
+ 
+ model.sum(dia.res, for_su)/for_su
 ```
  - - -
 <br>
