@@ -44,7 +44,10 @@
  > train data is used to learn models
  > Test data is used to validate the model
 ```
- sum(is.na(diamond))
+ set.seed(42)
+ inTrain <- caret::createDataPartition(y = diamond$price, p = 0.1, list = F)
+ sample.data <- diamond[-inTrain,]
+ test.data <- diamond[inTrain,]
 ```
  - - -
 <br>
