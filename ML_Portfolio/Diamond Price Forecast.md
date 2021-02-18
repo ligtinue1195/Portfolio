@@ -106,7 +106,7 @@
  ## Diamond Price Prediction Function
 > Predict using test data
 ```
-model.test <- function(data, model_){
+ model.test <- function(data, model_){
   num <- list(1)
   for(i in 1:data){
     num[i] <-  predict(model_, test.data[i,])
@@ -120,7 +120,7 @@ model.test <- function(data, model_){
  ## Differences between actual and predicted values (residuals)
 > The reason for creating a function separately is because of the implementation of the add-ons
 ```
-model.res <- function(data, su){
+ model.res <- function(data, su){
   pri <- test.data$price
   result <- list(1)
   
@@ -147,7 +147,7 @@ model.res <- function(data, su){
  ## Total interval between actual and forecast values
  > The mean was calculated by dividing it by the return value after the function runs
 ```
-model.sum <- function(data, su){
+ model.sum <- function(data, su){
   num <- 0
   
   for(i in 1:su){
@@ -161,6 +161,15 @@ model.sum <- function(data, su){
   }
   return(num)
 }
+```
+ - - -
+<br>
+
+ ## Model Verification
+ > Validate with function specified above
+```
+for_su <- nrow(test.data)
+dia.pre <- model.test(for_su, model.pre1)
 ```
  - - -
 <br>
