@@ -32,4 +32,4 @@
 ```
 <br>
 
-![다운로드](https://public.tableau.com/views/diamonds_1_16134400933900/Diamond_Variable?:language=ko&:display_count=y&publish=yes&:origin=viz_share_link)
+https://public.tableau.com/views/diamonds_1_16134400933900/Diamond_Variable?:language=ko&:display_count=y&publish=yes&:origin=viz_share_link
