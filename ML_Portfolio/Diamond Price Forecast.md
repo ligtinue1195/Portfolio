@@ -112,7 +112,7 @@
     num[i] <-  predict(model_, test.data[i,])
   }
   return(num)
-}
+ }
 ```
  - - -
 <br>
@@ -139,7 +139,7 @@
     }
   }
   return(result)
-}
+ }
 ```
  - - -
 <br>
@@ -160,7 +160,7 @@
     num <- num + number1
   }
   return(num)
-}
+ }
 ```
  - - -
 <br>
@@ -168,8 +168,8 @@
  ## Model Verification
  > Validate with function specified above
 ```
-for_su <- nrow(test.data)
-dia.pre <- model.test(for_su, model.pre1)
+ for_su <- nrow(test.data)
+ dia.pre <- model.test(for_su, model.pre1)
 ```
  - - -
 <br>
