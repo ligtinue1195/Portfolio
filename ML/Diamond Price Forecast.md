@@ -32,4 +32,4 @@
 ```
 <br>
 
-https://public.tableau.com/views/diamonds_1_16134400933900/Diamond_Variable?:language=ko&:display_count=y&publish=yes&:origin=viz_share_link
+![Diamond_Variable](https://user-images.githubusercontent.com/79243911/108318552-5d41e500-7203-11eb-959e-af175c8365c5.png)
