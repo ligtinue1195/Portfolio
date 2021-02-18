@@ -115,9 +115,10 @@ model.test <- function(data, model_){
 }
 ```
  - - -
+<br>
 
  ## Differences between actual and predicted values (residuals)
-> Predict using test data
+> The reason for creating a function separately is because of the implementation of the add-ons
 ```
 model.res <- function(data, su){
   pri <- test.data$price
