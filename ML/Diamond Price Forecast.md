@@ -18,6 +18,7 @@
  <br>
 
  ## Find Missing Values
+ > No missing values
 ```
  sum(is.na(diamond))
 ```
