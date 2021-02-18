@@ -102,3 +102,16 @@
 ```
  - - -
 <br>
+
+ ## model.pre1 predicted function
+> Predict using test data
+```
+model.test <- function(data, model_){
+  num <- list(1)
+  for(i in 1:data){
+    num[i] <-  predict(model_, test.data[i,])
+  }
+  return(num)
+}
+```
+ - - -
