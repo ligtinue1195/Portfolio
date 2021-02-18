@@ -32,8 +32,8 @@
 
 
  ## DataPartition
- > Categorized as test data and train data 
- > train data is used to learn models
+ > Categorized as test data and train data <br>
+ > train data is used to learn models <br>
  > Test data is used to validate the model
 ```
  set.seed(42)
