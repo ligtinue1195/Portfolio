@@ -37,7 +37,7 @@
 
 
  ## Visualize Critical Variables
- > cut, color, clarity, carat
+ > Data = cut, color, clarity, carat
 ```
  sum(is.na(diamond))
 ```
