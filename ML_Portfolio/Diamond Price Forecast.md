@@ -200,7 +200,7 @@
 
  ## Third modeling
  > Dependent variable : Price <br>
- > Use Optimization Independent Variables (forward) <br>
+ > Independent variable: Carat Clarity Color Cut Table X Depth Z<br>
  > <br>
  > On average, 739.7512$ error
 ```
@@ -220,7 +220,7 @@
 
  ## Fourth modeling
  > Dependent variable : Price <br>
- > Independent variable: Carat Clarity Color Cut Table X Depth <br>
+ > Use Optimization Independent Variables (forward) <br>
  > <br>
  > On average, 739.8397$ error
 ```
@@ -239,6 +239,26 @@ model.sum(dia.res, for_su)/for_su
 <br>
 
  ## Fifth modeling
+ > Dependent variable : Price <br>
+ > Independent variable: Carat Cut Color <br>
+ > <br>
+ > On average, 960.2413$ error
+```
+model.pre5 <- lm(price ~ carat + cut + color, sample.data)
+
+summary(model.pre5)
+
+for_su <- nrow(test.data)
+dia.pre <- model.test(as.numeric(for_su), model.pre5)
+
+dia.res <- model.res(dia.pre, for_su)
+
+model.sum(dia.res, for_su)/for_su
+```
+ - - -
+<br>
+
+ ## Model Verification with AIC
  > Dependent variable : Price <br>
  > Independent variable: Carat Cut Color <br>
  > <br>
