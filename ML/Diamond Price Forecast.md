@@ -74,3 +74,14 @@
 ```
  - - -
 <br>
+
+ ## T - Statistics
+ > The Overall T-value Except For The Table Is 2e-16 <br>
+ > Table T-value is 9.31e-12 <br>
+ > P-Value : 2.2e-16
+
+```
+ model.pre1 <- lm(price ~ carat + cut + color + clarity + table, sample.data)
+```
+ - - -
+<br>
