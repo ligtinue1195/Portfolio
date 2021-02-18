@@ -177,3 +177,21 @@
 ```
  - - -
 <br>
+
+ ## Second modeling
+ > Dependent variable : Price <br>
+ > All independent variables
+```
+model.pre2 <- lm(price ~ . , sample.data)
+
+summary(model.pre2)
+
+for_su <- nrow(test.data)
+dia.pre <- model.test(as.numeric(for_su), model.pre2)
+
+dia.res <- model.res(dia.pre, for_su)
+
+model.sum(dia.res, for_su)/for_su
+```
+ - - -
+<br>
