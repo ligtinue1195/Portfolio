@@ -66,7 +66,7 @@
 <br>
 
  ## Modeling
- >  Y	   Diamond  Price<br>
+ >  Y:	   Diamond  Price<br>
  > X1 	 Diamond  Carat<br>
  > X2 	 Diamond  Cut<br>
  > X3	  Diamond  Color<br>
