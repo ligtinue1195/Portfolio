@@ -115,3 +115,29 @@ model.test <- function(data, model_){
 }
 ```
  - - -
+
+ ## Differences between actual and predicted values (residuals)
+> Predict using test data
+```
+model.res <- function(data, su){
+  pri <- test.data$price
+  result <- list(1)
+  
+  for(i in 1:su){
+    number1 <- data[i]
+    number2 <- pri[i] 
+    number1 <- as.numeric(as.character(number1))
+    if(number1 < 0){
+      number1 <- (number1 * -1)
+      result[i] <- as.numeric(number1) + as.numeric(number2)
+    }else{
+      result[i] <- as.numeric(number1) - as.numeric(number2) 
+    }
+    if(result[i] < 0){
+      result[i] <- as.numeric(result[i]) * -1
+    }
+  }
+  return(result)
+}
+```
+ - - -
