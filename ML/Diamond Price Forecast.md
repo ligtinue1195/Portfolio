@@ -71,7 +71,8 @@
  > X3	  Diamond  Color<br>
  > X4	  Diamond  Clarity<br>
  > X5	  Diamond  Table <br>
- > Dependent variable Price
+ > <br>
+ > Y1	  Diamond Price
 ```
  model.pre0 <- lm(price ~ 1, sample.data)
 
