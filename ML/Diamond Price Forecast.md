@@ -1,4 +1,4 @@
-# R) Neural Network
+# R) Multiple Linear Regression
 ```
 다중 선형 회귀 (Multiple Linear Regression) 를 사용하여 모델을 개발하여 분석한다
 ```
