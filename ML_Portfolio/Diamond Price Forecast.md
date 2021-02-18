@@ -93,3 +93,12 @@
 ```
  - - -
 <br>
+
+ ## Regression diagnostics
+ ![Rplot](https://user-images.githubusercontent.com/79243911/108323984-b06b6600-720a-11eb-954a-eb4fbb7f42af.png)
+```
+ par(mfrow = c(2,2))
+ plot(model.pre1)
+```
+ - - -
+<br>
