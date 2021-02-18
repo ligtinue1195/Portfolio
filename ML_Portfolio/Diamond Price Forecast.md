@@ -166,7 +166,7 @@
 <br>
 
  ## Model Verification
- > Validate with function specified above
+ > On average, 802.6185$ error
 ```
  for_su <- nrow(test.data)
  dia.pre <- model.test(for_su, model.pre1)
