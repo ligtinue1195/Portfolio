@@ -80,7 +80,16 @@
  > Adjusted R-squared:  0.9164  P-Value : 2.2e-16<br>
 
 ```
- model.pre1 <- lm(price ~ carat + cut + color + clarity + table, sample.data)
+ summary(model.pre1)
+```
+ - - -
+<br>
+
+ ## Design Matrix
+ > Note When Modeling
+
+```
+ model.matrix(price ~ carat + cut + color + clarity + table , sample.data)
 ```
  - - -
 <br>
