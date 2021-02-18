@@ -43,6 +43,16 @@
  - - -
 <br>
 
+ ## Multicollinearity
+ > Exclude Null Hypotheses
+```
+ multiple.reg <- lm.beta(lm(price ~ carat + cut + color + clarity + table , diamond))
+
+ vif(multiple.reg)
+```
+ - - -
+<br>
+
  ## Recommended Variables
  > Using forward
 ```
@@ -56,12 +66,4 @@
  - - -
 <br>
 
- ## Multicollinearity
- > Exclude Null Hypotheses
-```
- multiple.reg <- lm.beta(lm(price ~ carat + cut + color + clarity + table , diamond))
 
- vif(multiple.reg)
-```
- - - -
-<br>
