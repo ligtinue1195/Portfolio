@@ -66,9 +66,9 @@
 <br>
 
  ## Modeling
- > Y1	  Diamond Price <br>
- > X1 	 Diamond  Carat : X2 	 Diamond  Cut : X3	  Diamond  Color<br>
- > X4	  Diamond  Clarity : X5	  Diamond  Table<br>
+ > Dependent variable : Price <br>
+ > Independent variable: Carat, Cut, Color, Clarity, Table
+
 ```
  model.pre0 <- lm(price ~ 1, sample.data)
 
