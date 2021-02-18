@@ -8,10 +8,7 @@
  ## Load Data
 > Use Cagle Diamond csv file
 ```
- library(nnet)
- library(caret)
- library(ROCR)
- library(psych)
+ diamond <- read.csv("data/diamonds.csv", stringsAsFactors = F)
 ```
  - - -
  <br>
