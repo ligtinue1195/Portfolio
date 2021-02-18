@@ -103,7 +103,7 @@
  - - -
 <br>
 
- ## model predicted function
+ ## Diamond Price Prediction Function
 > Predict using test data
 ```
 model.test <- function(data, model_){
