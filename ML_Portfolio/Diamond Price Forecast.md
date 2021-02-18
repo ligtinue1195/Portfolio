@@ -103,7 +103,7 @@
  - - -
 <br>
 
- ## model.pre1 predicted function
+ ## model predicted function
 > Predict using test data
 ```
 model.test <- function(data, model_){
