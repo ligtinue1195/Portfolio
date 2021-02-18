@@ -265,3 +265,12 @@
 ```
  - - -
 <br>
+
+ ## Recommended Models
+ > The reason we put the second model is because we used the whole variable
+ > Recommended models match 4th model
+```
+ step(model.pre2, direction = "backward")
+```
+ - - -
+<br>
