@@ -46,12 +46,22 @@
  ## Recommended Variables
  > Using forward
 ```
-model.pre0 <- lm(price ~ 1, sample.data)
+ model.pre0 <- lm(price ~ 1, sample.data)
 
-model.pre0 <- step(model.pre0,
-                   direction = "forward",
-                   scope = (price ~ carat + cut + color + clarity + depth + table + x + y + z),
-                   trace = T)
+ model.pre0 <- step(model.pre0,
+                    direction = "forward",
+                    scope = (price ~ carat + cut + color + clarity + depth + table + x + y + z),
+                    trace = T)
+```
+ - - -
+<br>
+
+ ## Multicollinearity
+ > Exclude Null Hypotheses
+```
+ multiple.reg <- lm.beta(lm(price ~ carat + cut + color + clarity + table , diamond))
+
+ vif(multiple.reg)
 ```
  - - -
 <br>
