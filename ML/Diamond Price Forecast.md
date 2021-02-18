@@ -66,12 +66,12 @@
 <br>
 
  ## Modeling
- > Y	 Diamond Price<br>
- > X1 	 Diamond Carat<br>
- > X2 	 Diamond Cut<br>
- > X3	 Diamond Color<br>
- > X4	 Diamond  Clarity<br>
- > X5	 Diamond  Table
+ > Y	   Diamond  Price<br>
+ > X1 	 Diamond  Carat<br>
+ > X2 	 Diamond  Cut<br>
+ > X3	  Diamond  Color<br>
+ > X4	  Diamond  Clarity<br>
+ > X5	  Diamond  Table
 ```
  model.pre0 <- lm(price ~ 1, sample.data)
 
