@@ -224,16 +224,16 @@
  > <br>
  > On average, 739.8397$ error
 ```
-model.pre4 <- lm(price ~ carat + clarity + color + cut + table + x + depth, sample.data)
+ model.pre4 <- lm(price ~ carat + clarity + color + cut + table + x + depth, sample.data)
 
-summary(model.pre4)
+ summary(model.pre4)
 
-for_su <- nrow(test.data)
-dia.pre <- model.test(as.numeric(for_su), model.pre4)
+ for_su <- nrow(test.data)
+ dia.pre <- model.test(as.numeric(for_su), model.pre4)
 
-dia.res <- model.res(dia.pre, for_su)
+ dia.res <- model.res(dia.pre, for_su)
 
-model.sum(dia.res, for_su)/for_su
+ model.sum(dia.res, for_su)/for_su
 ```
  - - -
 <br>
@@ -244,16 +244,16 @@ model.sum(dia.res, for_su)/for_su
  > <br>
  > On average, 960.2413$ error
 ```
-model.pre5 <- lm(price ~ carat + cut + color, sample.data)
+ model.pre5 <- lm(price ~ carat + cut + color, sample.data)
 
-summary(model.pre5)
+ summary(model.pre5)
 
-for_su <- nrow(test.data)
-dia.pre <- model.test(as.numeric(for_su), model.pre5)
+ for_su <- nrow(test.data)
+ dia.pre <- model.test(as.numeric(for_su), model.pre5)
 
-dia.res <- model.res(dia.pre, for_su)
+ dia.res <- model.res(dia.pre, for_su)
 
-model.sum(dia.res, for_su)/for_su
+ model.sum(dia.res, for_su)/for_su
 ```
  - - -
 <br>
@@ -264,16 +264,7 @@ model.sum(dia.res, for_su)/for_su
  > <br>
  > On average, 960.2413$ error
 ```
-model.pre5 <- lm(price ~ carat + cut + color, sample.data)
-
-summary(model.pre5)
-
-for_su <- nrow(test.data)
-dia.pre <- model.test(as.numeric(for_su), model.pre5)
-
-dia.res <- model.res(dia.pre, for_su)
-
-model.sum(dia.res, for_su)/for_su
+ AIC(model.pre1, model.pre2, model.pre3, model.pre4, model.pre5)
 ```
  - - -
 <br>
