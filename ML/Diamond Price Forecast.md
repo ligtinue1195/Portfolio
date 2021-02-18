@@ -32,7 +32,7 @@
 
 
  ## DataPartition
- > Categorized as test data and train data
+ > Categorized as test data and train data 
  > train data is used to learn models
  > Test data is used to validate the model
 ```
