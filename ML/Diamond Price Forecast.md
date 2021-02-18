@@ -17,8 +17,7 @@
  - - -
  <br>
 
- ## 데이터 불러오기 및 탐색
+ ## Find Missing Values
 ```
- cb <- read.delim("Hshopping.txt", stringsAsFactors = FALSE)
- head(cb)
+ sum(is.na(diamond))
 ```
