@@ -33,7 +33,8 @@
 
  ## Data Correlation
 ![Diamond_Variable](https://user-images.githubusercontent.com/79243911/108318552-5d41e500-7203-11eb-959e-af175c8365c5.png)
-<br>
+<br><br>
+
 
  ## Visualize Critical Variables
  > cut, color, clarity, carat
