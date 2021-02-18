@@ -70,12 +70,7 @@
  > Independent variable: Carat, Cut, Color, Clarity, Table
 
 ```
- model.pre0 <- lm(price ~ 1, sample.data)
-
- model.pre0 <- step(model.pre0,
-                    direction = "forward",
-                    scope = (price ~ carat + cut + color + clarity + depth + table + x + y + z),
-                    trace = T)
+ model.pre1 <- lm(price ~ carat + cut + color + clarity + table, sample.data)
 ```
  - - -
 <br>
