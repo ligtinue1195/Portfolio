@@ -142,3 +142,25 @@ model.res <- function(data, su){
 }
 ```
  - - -
+<br>
+
+ ## Total interval between actual and forecast values
+```
+model.sum <- function(data, su){
+  num <- 0
+  for(i in 1:su){
+    number1 <- data[i]
+    number1 <- as.numeric(number1)
+    
+    if(number1 < 0){
+      number1 <- number1 * -1
+    }
+    
+    num <- num + number1
+  }
+  
+  return(num)
+}
+```
+ - - -
+<br>
