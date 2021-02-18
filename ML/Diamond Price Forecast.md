@@ -65,4 +65,20 @@
  - - -
 <br>
 
+ ## Modeling
+ > Y	 Diamond Price<br>
+ > X1 	 Diamond Carat<br>
+ > X2 	 Diamond Cut<br>
+ > X3	 Diamond Color<br>
+ > X4	 Diamond  Clarity<br>
+ > X5	 Diamond  Table
+```
+ model.pre0 <- lm(price ~ 1, sample.data)
 
+ model.pre0 <- step(model.pre0,
+                    direction = "forward",
+                    scope = (price ~ carat + cut + color + clarity + depth + table + x + y + z),
+                    trace = T)
+```
+ - - -
+<br>
