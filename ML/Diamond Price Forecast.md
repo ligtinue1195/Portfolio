@@ -76,7 +76,7 @@
 <br>
 
  ## T - Statistics
- > [The Overall T-value Except For The Table Is 2e-16] [Table T-value is 9.31e-12] <br>
+ > The Overall T-value Except For The Table Is 2e-16 Table T-value is 9.31e-12 <br>
  > Adjusted R-squared:  0.9164  P-Value : 2.2e-16<br>
 
 ```
