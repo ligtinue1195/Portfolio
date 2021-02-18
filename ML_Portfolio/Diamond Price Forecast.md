@@ -217,3 +217,23 @@
 ```
  - - -
 <br>
+
+ ## Fourth modeling
+ > Dependent variable : Price <br>
+ > Independent variable: Carat Clarity Color Cut Table X Depth <br>
+ > <br>
+ > On average, 739.7512$ error
+```
+ model.pre3 <- lm(price ~ carat + clarity + color + cut + table + x + depth + z, sample.data)
+
+ summary(model.pre3)
+
+ for_su <- nrow(test.data)
+ dia.pre <- model.test(as.numeric(for_su), model.pre3)
+
+ dia.res <- model.res(dia.pre, for_su)
+
+ model.sum(dia.res, for_su)/for_su
+```
+ - - -
+<br>
