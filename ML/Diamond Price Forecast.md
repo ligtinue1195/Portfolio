@@ -30,6 +30,15 @@
  - - -
 <br>
 
+ ## Multicollinearity
+ > Exclude Null Hypotheses
+```
+ multiple.reg <- lm.beta(lm(price ~ carat + cut + color + clarity + table , diamond))
+
+ vif(multiple.reg)
+```
+ - - -
+<br>
 
  ## DataPartition
  > Categorize data and use it for learning and validation
@@ -39,16 +48,6 @@
  inTrain <- caret::createDataPartition(y = diamond$price, p = 0.1, list = F)
  sample.data <- diamond[-inTrain,]
  test.data <- diamond[inTrain,]
-```
- - - -
-<br>
-
- ## Multicollinearity
- > Exclude Null Hypotheses
-```
- multiple.reg <- lm.beta(lm(price ~ carat + cut + color + clarity + table , diamond))
-
- vif(multiple.reg)
 ```
  - - -
 <br>
