@@ -180,7 +180,8 @@
 
  ## Second modeling
  > Dependent variable : Price <br>
- > All independent variables
+ > All independent variables <br>
+ > On average, 739.7546$ error
 ```
 model.pre2 <- lm(price ~ . , sample.data)
 
