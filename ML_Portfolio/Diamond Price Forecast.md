@@ -145,6 +145,7 @@ model.res <- function(data, su){
 <br>
 
  ## Total interval between actual and forecast values
+ > The mean was calculated by dividing it by the return value after the function runs
 ```
 model.sum <- function(data, su){
   num <- 0
