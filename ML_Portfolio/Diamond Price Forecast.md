@@ -184,16 +184,36 @@
  > <br>
  > On average, 739.7546$ error
 ```
-model.pre2 <- lm(price ~ . , sample.data)
+ model.pre2 <- lm(price ~ . , sample.data)
 
-summary(model.pre2)
+ summary(model.pre2)
 
-for_su <- nrow(test.data)
-dia.pre <- model.test(as.numeric(for_su), model.pre2)
+ for_su <- nrow(test.data)
+ dia.pre <- model.test(as.numeric(for_su), model.pre2)
 
-dia.res <- model.res(dia.pre, for_su)
+ dia.res <- model.res(dia.pre, for_su)
 
-model.sum(dia.res, for_su)/for_su
+ model.sum(dia.res, for_su)/for_su
+```
+ - - -
+<br>
+
+ ## Third modeling
+ > Dependent variable : Price <br>
+ > Use Optimization Independent Variables (forward) <br>
+ > <br>
+ > On average, 739.7512$ error
+```
+ model.pre3 <- lm(price ~ carat + clarity + color + cut + table + x + depth + z, sample.data)
+
+ summary(model.pre3)
+
+ for_su <- nrow(test.data)
+ dia.pre <- model.test(as.numeric(for_su), model.pre3)
+
+ dia.res <- model.res(dia.pre, for_su)
+
+ model.sum(dia.res, for_su)/for_su
 ```
  - - -
 <br>
