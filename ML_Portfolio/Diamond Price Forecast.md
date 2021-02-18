@@ -259,10 +259,7 @@
 <br>
 
  ## Model Verification with AIC
- > Dependent variable : Price <br>
- > Independent variable: Carat Cut Color <br>
- > <br>
- > On average, 960.2413$ error
+ > The 4th model out of the 5 models has the best performance
 ```
  AIC(model.pre1, model.pre2, model.pre3, model.pre4, model.pre5)
 ```
