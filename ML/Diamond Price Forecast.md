@@ -42,3 +42,16 @@
 ```
  - - -
 <br>
+
+ ## Recommended Variables
+ > Using forward
+```
+model.pre0 <- lm(price ~ 1, sample.data)
+
+model.pre0 <- step(model.pre0,
+                   direction = "forward",
+                   scope = (price ~ carat + cut + color + clarity + depth + table + x + y + z),
+                   trace = T)
+```
+ - - -
+<br>
